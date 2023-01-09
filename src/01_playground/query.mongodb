@@ -1,0 +1,5 @@
+/* conexion a la base de datos */
+use("sample_training")
+
+/* base de datos -> coleccion a la que me voy a conectar -> contar cuantos documentos hay*/
+db.zips.find({state : "NY"}).count()
